@@ -1,0 +1,9 @@
+.DS_Store
+xcuserdata/
+bin/
+Debug/
+Release/
+publish/
+a.out
+test
+
