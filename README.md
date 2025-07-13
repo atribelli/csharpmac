@@ -12,7 +12,7 @@ However, since we have a normal dynamic library, we have a simpler option. Swift
 This project will use the Swift manual loading a dynamic library approach. If you would like to see an example of a bridging header and wrapper, take a look at the asmmobile project.  
 
 
-# C# Dynmic Library
+# C# Dynamic Library
 
 The C# dynamic library CSharpLib was created using .NET console tools.  
 
