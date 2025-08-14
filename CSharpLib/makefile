@@ -1,10 +1,23 @@
 platform := $(shell uname -m)
+kernel   := $(shell uname -s)
+
+ifeq ($(kernel), Darwin)
 
 ifeq ($(platform), x86_64)
 target  = osx-x64
 else ifeq ($(platform), arm64)
 target  = osx-arm64
 endif
+
+else ifeq ($(kernel), Linux)
+
+ifeq ($(platform), x86_64)
+target  = linux-x64
+else ifeq ($(platform), arm64)
+target  = linux-arm64
+endif
+
+endif   # Linux, Darwin
 
 all: test
 
